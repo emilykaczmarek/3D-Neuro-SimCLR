@@ -1,0 +1,20 @@
+# Experiment / task settings
+task_type: regression             # classification | regression
+tag: simclr_eval_testrun_reg      # experiment name / label
+trial: 0                          # random seed or trial index
+
+# Training hyperparameters
+lr: 0.0001
+epochs: 300
+batch_size: 6
+finetune: true  # whether to finetune encoder or freeze it for linear probing
+num_workers: 8
+
+# Paths
+save_path: ""  # where checkpoints + logs go
+simclr_ckpt: ""  # pretrained SSL checkpoint
+
+# Dataset paths
+train_file: "train.csv"  # training split file
+val_file: "val.csv"      # val split file
+test_file: "test.csv"    # test split file

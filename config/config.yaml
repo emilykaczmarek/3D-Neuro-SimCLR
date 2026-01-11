@@ -1,0 +1,22 @@
+# train options
+seed: 42 
+batch_size: 6
+start_epoch: 0
+epochs: 1000
+num_workers: 8
+
+# model options
+resnet: "resnet18"
+projection_dim: 64 
+
+# loss options
+optimizer: "Adam" # or LARS (experimental)
+weight_decay: 1.0e-6 # "optimized using LARS [...] and weight decay of 10−6"
+temperature: 0.5 # see appendix B.7.: Optimal temperature under different batch sizes
+
+# reload options
+model_path: "/home/e/ekacz/links/scratch/SSL/SimCLR/public_test" #"/" # set to the directory to save `checkpoint_##.tar` 
+reload: True
+
+# data options
+data_file: "t1_mask_pairs.csv" # csv file containing image/mask paths for each patient

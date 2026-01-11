@@ -1,0 +1,9 @@
+__pycache__
+runs/
+datasets/testrun_datasets
+save/
+*.tar
+build/
+dist/
+simclr.egg-info
+lightning_logs/
