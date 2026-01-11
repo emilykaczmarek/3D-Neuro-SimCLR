@@ -115,6 +115,25 @@ The code automatically opens `config/config_eval.yaml` for downstream fine-tunin
 python main_eval.py 
 ```
 
+## Pretrained Model Weights
+
+We provide a pretrained SimCLR 3D Brain MRI foundation model.
+
+### Download
+
+Download the checkpoint from GitHub Releases:
+
+https://github.com/emilykaczmarek/3D-Neuro-SimCLR/releases/download/v1.0.0/simclr_3d_brain_foundation.tar
+
+
+### Extract
+
+After downloading, extract the file:
+
+```bash
+tar -xf simclr_3d_brain_foundation.tar
+```
+
 ## Acknowledgements
 
 This codebase builds upon and adapts components from the following open-source projects:
