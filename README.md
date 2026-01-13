@@ -90,19 +90,19 @@ The code automatically opens `config/config.yaml` for pre-training.
 For pre-training, distributed computing is configured. To run with a single node, use:
 
 ```bash
-torchrun train_simclr.py
+torchrun main.py
 ```
 
 For a single node with multi-gpu (e.g., 4 gpus), use 
 
 ```bash
-torchrun --nproc_per_node=4 train_simclr.py
+torchrun --nproc_per_node=4 main.py
 ```
 
 And for multi-node use (e.g., 4 gpus, 4 nodes):
 
 ```bash
-torchrun --nproc_per_node=4 --nnodes=4 train_simclr.py
+torchrun --nproc_per_node=4 --nnodes=4 main.py
 ```
 
 ## Running Supervised Training
